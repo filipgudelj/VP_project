@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles/population.css" />
+    <title>Female Population</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./population.html">World</a>
+      <a href="./female_population.html" class="active-link">Female</a>
+      <a href="./male_population.html">Male</a>
+    </nav>
+    <h1 class="title">
+      Female Population
+      <span id="decade"></span>
+    </h1>
+    <div class="btns">
+      <button id="previous-decade-btn">Previous Decade</button>
+      <button id="next-decade-btn">Next Decade</button>
+    </div>
+    <div class="details">
+      <h1 class="country"></h1>
+      <p class="population"></p>
+    </div>
+    <div class="graph"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+    <script src="src/js/logic_female.js"></script>
+  </body>
+</html>
