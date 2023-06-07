@@ -173,9 +173,9 @@ function drawMap(world, data) {
         { year: 2020, population: d.details.population2020 },
       ];
 
-      var svgWidth = 330;
-      var svgHeight = 250;
-      var margin = { top: 20, right: 20, bottom: 30, left: 85 };
+      var svgWidth = 480;
+      var svgHeight = 330;
+      var margin = { top: 20, right: 20, bottom: 30, left: 100 };
       var graphWidth = svgWidth - margin.left - margin.right;
       var graphHeight = svgHeight - margin.top - margin.bottom;
 
@@ -224,12 +224,12 @@ function drawMap(world, data) {
       svg
         .selectAll(".x-axis text")
         .attr("fill", "white")
-        .style("font-size", "12px")
+        .style("font-size", "14px")
         .style("font-weight", "700");
       svg
         .selectAll(".y-axis text")
         .attr("fill", "white")
-        .style("font-size", "12px")
+        .style("font-size", "14px")
         .style("font-weight", "700");
 
       d3.select(".details").style("visibility", "visible");
